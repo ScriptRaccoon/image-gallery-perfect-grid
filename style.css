@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.gallery::after {
+    content: "";
+    flex-grow: 999999999;
+}
+
+.gallery > div {
+    margin: 4px;
+    position: relative;
+}
+
+.gallery > div > i {
+    display: block;
+}
+
+.gallery > div > img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    vertical-align: bottom;
+}
